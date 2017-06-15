@@ -172,3 +172,5 @@ app.run(debug=True, host=os.getenv('IP', '0.0.0.0'), port=8080)
 ```
 
 ![browser](browser2.png)
+
+Great! Hopefully this gets you up and running.  Now when you go to build a new assignment, you can create a new directory and tell Cloud9 to run different server.py files out of different directories.  This way, you don't have to jump through the hoops of setting up another workspace with Python, all the pip installs, mysql install, etc. !
