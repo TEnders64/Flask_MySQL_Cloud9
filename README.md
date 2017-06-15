@@ -41,7 +41,10 @@ so it's possible to have a directory per assignment as well.
 - Head back to Cloud 9 in your browser and jump down to the info about the mysql prompt.
 
 ##### IF you have a sql file in hand, such as or have a SQL file ready to go, such as the Lead_Gen_Business Database (found here:[sql file](http://s3.amazonaws.com/General_V88/boomyeah/company_209/chapter_3569/handouts/chapter3569_5435_lead-gen-business-new.sql)), and need to transfer the SQL Code as it stands now...
-- Find your sql file and open it in a text editor.
+- Find your sql file and open it in a text editor. It might look something like below...
+
+![sql file](sql_creation.png)
+
 - Copy the entire SQL code and head back to Cloud 9 in your browser and move onto the mysql prompt section below
 
 #### To the mysql prompt!
