@@ -106,7 +106,7 @@ def MySQLConnector(app, db):
 - Right-click the lead_gen_demo folder and select New File... and copy/paste the code above into a file called mysqlconnection.py
 - ALMOST THERE!
 - Now, create another file called server.py in the same folder.  Check out the alterations to this file now...
-![folder structure](folder_structure.png)
+
 ```python
 import os # this is new!!
 # import the Connector function
@@ -123,6 +123,9 @@ def index():
 app.run(debug=True, host=os.getenv('IP', '0.0.0.0'), port=8080) 
 ```
 
+Here's the resulting folder structure:
+
+![folder structure](folder_structure.png)
 
 - Now, technical jargon aside, we want to launch this and see if we can actually send a get request to "/" like we're used to from our Flask days.
 - But we've got to somehow get Cloud9 to run server.py for us and we have to know how to navigate there!
@@ -139,9 +142,11 @@ Important: use os.getenv(PORT, 8080) as the port and os.getenv(IP, 0.0.0.0) as t
  * Debugger PIN: 261-553-595
 ```
 - Copy this URL where it says `Your code is running at https://xxxx-xxxxx-xxxxxx.c9users.io` and paste it into a new browser tab!
+
 ![browser](browser.png)
 
 - Go back to your Cloud 9 bash terminal to see what happens! Hopefully you see Python errors like the ones above in the browser (we aren't returning a response) and then a boat load of query results in the terminal!
+
 ![bash](bash_terminal.png)
 
 - The important thing to note here is that the Cloud9 url we pasted into the browser is acting like our localhost.  So if we wanted to set up a route in server.py to accept a GET request to /leads, we can do that like we normally would!  No need to worry about the Cloud9 URL business.
@@ -165,4 +170,5 @@ def get_leads():
 
 app.run(debug=True, host=os.getenv('IP', '0.0.0.0'), port=8080) 
 ```
+
 ![browser](browser2.png)
